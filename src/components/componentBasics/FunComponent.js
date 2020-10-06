@@ -2,24 +2,26 @@ import React, { Component } from 'react';
 
 
 
-let FunComponent = () => {
+// let FunComponent = () => {
 
-   return (
+   
 
-      <div>
-         <h1>Fucntional Component</h1>
-      </div>
-   )
-}
+//    return (
 
-
-// function FunComponent(){
-//     return (
-//         <div>
-//            <h1>My Functional Component</h1>
-//         </div>
-//     )
+//       <div>
+//          <h1>Fucntional Component</h1>
+//       </div>
+//    )
 // }
+
+
+function FunComponent(){
+    return (
+        <div>
+           <h1>My Functional Component</h1>
+        </div>
+    )
+}
 
 
 

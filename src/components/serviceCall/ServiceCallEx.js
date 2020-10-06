@@ -74,32 +74,32 @@ class ServiceCallEx extends Component {
         //     })
 
 
-        // fetch('https://jsonplaceholder.typicode.com/posts', {
-        //     method: 'POST',
-        //     body: JSON.stringify({
-        //         title: 'foo',
-        //         body: 'bar',
-        //         userId: 1
-        //     }),
-        //     headers: {
-        //         "Content-type": "application/json; charset=UTF-8"
-        //     }
-        // })
-        //     .then(
-        //         (response) => {
-        //             return response.json()
-        //         }, (err) => {
-        //             throw Error(err)
-        //         }
-        //     )
-        //     .then(json => {
-        //         console.log("printing response");
-        //         console.log(json)
-        //     }
-        //     ).catch((err) => {
-        //         console.log("printing error");
-        //         console.log(err);
-        //     })
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify({
+                title: 'foo',
+                body: 'bar',
+                userId: 1
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+            .then(
+                (response) => {
+                    return response.json()
+                }, (err) => {
+                    throw Error(err)
+                }
+            )
+            .then(json => {
+                console.log("printing response");
+                console.log(json)
+            }
+            ).catch((err) => {
+                console.log("printing error");
+                console.log(err);
+            })
 
 
 

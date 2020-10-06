@@ -31,10 +31,14 @@ export const updateColg = (data) => {
 
 
 
-         fetch('http://localhost:8070/api/getColgAddress', {
+        fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
             body: JSON.stringify({
-                name:data 
+
+                title: 'foo',
+                body: 'bar',
+                userId: 1
+
             }),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
@@ -51,13 +55,13 @@ export const updateColg = (data) => {
             .then(json => {
                 console.log(json)
 
-                
-                dispatch(updatedColg(json.res))
+
+                dispatch(updatedColg(json.id))
             }
             ).catch((err) => {
                 console.log("printing error");
                 console.log(err);
-                dispatch(updatedColg(data+'(loc:)'))
+                dispatch(updatedColg(data + '(loc:)'))
             })
 
 

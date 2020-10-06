@@ -35,7 +35,7 @@ class StylesEx extends Component {
 
                 
                 <div style={Styles.ToDoBox}>
-                    <h2 style={Styles.ToDOText}>{this.props.name}</h2>
+                    <h2 style={{ padding: "10px 20px", textAlign: "center", color: "white" }}>ToDo</h2>
                 </div>
             </div>
         )

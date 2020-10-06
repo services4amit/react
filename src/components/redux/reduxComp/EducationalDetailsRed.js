@@ -24,6 +24,7 @@ const mapStateToProps = state => {
 
     return {
         educationalState: state.educational
+        
     }
 }
 

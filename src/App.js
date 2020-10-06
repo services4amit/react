@@ -35,9 +35,14 @@ import './App.css';
 //jsx code can be compliled with webpack
 //create react app gives all the set up
 class App extends React.Component {
-  render(){
+  render() {
+//First example
     return (
-     <h1>Hello World</h1>
+      <div>
+        <h1>Hello World</h1>
+        <h1>Hello guys</h1>
+      </div>
+
     );
   }
 }

@@ -36,7 +36,7 @@ class ReduxRouter extends Component {
 
 }
 
-export default RouterEx;
+export default ReduxRouter;
 
 
 

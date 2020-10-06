@@ -5,6 +5,9 @@ const msg = "Hi React...";
 class JSXConditions extends Component {
 
 
+
+
+
     showHello = () => {
 
         return "Hello React....."
@@ -28,15 +31,15 @@ class JSXConditions extends Component {
 
 
         //3
-        // if (false) {
-        //     element4 = (
-        //         <h1>Value is True</h1>
-        //     )
-        // }else{
-        //     element4 = (
-        //         <h1>Value is False</h1>
-        //     )    
-        // }
+        if (false) {
+            element4 = (
+                <h1>Value is True</h1>
+            )
+        }else{
+            element4 = (
+                <h1>Value is False</h1>
+            )    
+        }
 
         return (
             <div>

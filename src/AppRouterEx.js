@@ -39,11 +39,7 @@ class AppRouterEx extends Component {
 
 
 
-                <Switch>
-                    <Route
-                        path="/"
-                        component={Home}
-                    ></Route>
+                {/* <Switch>
                     <Route
                         path="/about"
                         component={About}
@@ -52,13 +48,19 @@ class AppRouterEx extends Component {
                         path="/topics"
                         component={Topics}
                     ></Route>
+                    <Route
+                        path="/"
+                        component={Home}
+                    ></Route>
 
-                </Switch>
+                    
+
+                </Switch> */}
 
                 {/* <Switch>
                     <Route
                         exact
-                        path="/"
+                        path="/home"
                         component={Home}
                     ></Route>
                     <Route
@@ -71,7 +73,7 @@ class AppRouterEx extends Component {
                         path="/topics"
                         component={Topics}
                     ></Route>
-                    <Redirect to="/" />
+                    <Redirect to="/home" />
                 </Switch> */}
 
 
@@ -93,13 +95,13 @@ class AppRouterEx extends Component {
                     >Topics</Link>
                 </nav> */}
 
-                {/* <nav>
+                <nav>
                     <NavLink
                         activeStyle={{
                             background: 'red',
                             color: 'white'
                         }}
-                        to="/"
+                        to="/home"
                     >Home</NavLink>
                     <br></br>
                     <NavLink
@@ -117,7 +119,7 @@ class AppRouterEx extends Component {
                         }}
                         to="/topics"
                     >Topics</NavLink>
-                </nav> */}
+                </nav>
 
 
 

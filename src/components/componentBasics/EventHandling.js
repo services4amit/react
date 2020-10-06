@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class EventHandling extends Component {
 
     state = {
-        name: 'Mini',
+        name: 'Alex',
         buttonSelected: '',
         buttons: [
             { name: "Button1" },
@@ -15,10 +15,17 @@ class EventHandling extends Component {
 
 
 
-    handleChangeName = () => {
+    // handleChangeName = () => {
+
+    //     this.setState({
+    //         name: "Mark"
+    //     })
+    // }
+
+    handleChangeName = (data) => {
 
         this.setState({
-            name: "Mark"
+            name: data
         })
     }
 
@@ -31,7 +38,9 @@ class EventHandling extends Component {
 
 
 
-    handleChangeNameInput(data) {
+    handleChangeNameInput = (data) => {
+
+        console.log(data.target.value)
 
         this.setState({
             name: data.target.value
@@ -46,7 +55,7 @@ class EventHandling extends Component {
         console.log(evt)
     }
 
-    // handleChangeNameInputNew(){
+    // handleChangeNameInputNew=()=>{
     //     this.setState({
     //         name: "evt"
     //     })
@@ -61,7 +70,7 @@ class EventHandling extends Component {
 
     }
 
-    // handleButton(name){
+    // handleButton=(name)=>{
     //     this.setState({
     //         buttonSelected: name
     //     })
@@ -74,29 +83,36 @@ class EventHandling extends Component {
 
         return (
             <div>
-                {/* <h1>Hi {this.state.name}</h1> */}
+                <h1>Hi {this.state.name}</h1>
 
 
 
+                {/* 
+                <button
+                    onClick={this.handleChangeName}>
+                    Change Name</button> */}
 
-                <button onClick={this.handleChangeName}>Change Name</button>
-                
+                {/* <button onClick={() => this.handleChangeName("David")}>Change Name</button> */}
+
                 {/* <input
-                    onChange={() => this.handleChangeNameInputNew("David")}
+                    onChange={()=>this.handleChangeNameInputNew("David")}
                     type="text"></input>
                 <br></br>
                 <br></br> */}
 
-                <input
-                    onChange={this.handleChangeNameInput.bind(this)}
+                {/* <input
+                    onChange={this.handleChangeNameInput}
                     type="text"></input>
-                <br></br>
+                <br></br> */}
 
                 <h1>Button selected: {this.state.buttonSelected}</h1>
+
                 {
                     this.state.buttons.map(b => {
                         return (
-                            <button onClick={() => this.handleButton(b.name)}>{b.name}</button>)
+                            <button onClick={() => this.handleButton(b.name)}>{b.name}</button>
+
+                        )
                     })
                 }
             </div>

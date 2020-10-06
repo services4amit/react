@@ -25,6 +25,8 @@ class StatefullComponent extends Component {
             [
                 { name: "A", age: 20 },
                 { name: "B", age: 22 },
+                { name: "C", age: 22 },
+                { name: "D", age: 22 },
 
             ]
     }
@@ -44,10 +46,10 @@ class StatefullComponent extends Component {
         return (
             <div>
                 <h1>My Component</h1>
-                {/* <PrintName name={this.state.data[0].name} age={this.state.data[0].age}></PrintName>
+                 {/* <PrintName name={this.state.data[0].name} age={this.state.data[0].age}></PrintName>
 
 
-                <PrintName name={this.state.data[1].name} age={this.state.data[1].age}></PrintName> */}
+                <PrintName name={this.state.data[1].name} age={this.state.data[1].age}></PrintName>  */}
 
 
                 {
@@ -58,11 +60,11 @@ class StatefullComponent extends Component {
 
                 }
 
-                <PrintName
+                {/* <PrintName
                     name={this.state.data[1].name}
                     age={this.state.data[1].age}
                     changeName={this.changeName}
-                ></PrintName> */}
+                ></PrintName>  */}
 
 
             </div>
