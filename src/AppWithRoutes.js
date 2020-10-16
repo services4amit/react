@@ -16,10 +16,16 @@ import MyContextComp from "./components/contextComp/MyContextComp";
 import PrintContextName from "./components/contextComp/PrintContextName";
 import AppHooks from './components/hooks/App'
 import LifeCycleExHooks from './components/hooks/LifeCycleExHooks'
+import PdfPrint from './components/pdf/PdfPrint';
+import ReactPdf from './components/pdf/ReactPdf';
+import HOCEx from './components/hoc/Parent'
 class AppWithRoutes extends Component {
   render() {
     return (
       <Switch>
+        <Route component={ReactPdf} exact path="/ReactPdf" />
+        <Route component={PdfPrint} exact path="/PdfPrint" />
+        <Route component={HOCEx} exact path="/hocex" />
         <Route component={AppHooks} exact path="/apphooks" />
         <Route component={LifeCycleExHooks} exact path="/lifehooks" />
         <Route component={MyContextComp} exact path="/contextmy" />

@@ -11,6 +11,7 @@ class LifeCycleExHooks extends Component {
 
 
 
+
     handleChangeToggle = () => {
         this.setState({
             showText: !(this.state.showText)
@@ -27,10 +28,11 @@ class LifeCycleExHooks extends Component {
 
 
     render() {
+        // window.onafterprint
         let lifeCycleText = null;
         if (this.state.showText) {
             lifeCycleText = <LifeCyclesHooks
-                
+
                 text={this.state.text}
 
             ></LifeCyclesHooks>
