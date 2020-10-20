@@ -19,6 +19,8 @@
     "react-scripts": "3.4.1",
     "react-to-print": "^2.10.0",
     "redux": "^4.0.4",
+    "react-lazyload": "^3.0.0",
+    "react-google-invisible-recaptcha": "^0.2.11",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
