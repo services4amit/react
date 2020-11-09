@@ -1,8 +1,8 @@
 
 const inintialState={
     personal: {
-        name: '',
-        father: ''
+        name: 'default',
+        father: 'defaultFather'
     }
 }
 

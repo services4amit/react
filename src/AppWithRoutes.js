@@ -18,11 +18,28 @@ import AppHooks from './components/hooks/App'
 import LifeCycleExHooks from './components/hooks/LifeCycleExHooks'
 import PdfPrint from './components/pdf/PdfPrint';
 import ReactPdf from './components/pdf/ReactPdf';
-import HOCEx from './components/hoc/Parent'
+import HOCEx from './components/hoc/Parent';
+import LifeCyclesHooks from './components/hooks/LifeCyclesHooks'
+import UseRefEx from './components/hooks/UseRefEx'
+import UseMemoEx from './components/hooks/memo/Parent'
+import UsePrevious from './components/hooks/customHook/Parent'
+import ConsumerContext from './components/hooksWithFunctionalComps/useContext/consumer'
+import PersonalDetailsRed from './components/redux/reduxHooks/PersonalDetailsRed'
+import ParentTypeCheck from './components/typeChecking/Parent'
+
+
+
 class AppWithRoutes extends Component {
   render() {
     return (
       <Switch>
+        <Route component={ParentTypeCheck}  exact path="/ParentTypeCheck"/>
+        <Route component={PersonalDetailsRed} exact path="/PersonalDetailsRed" />
+        <Route component={ConsumerContext} exact path="/ConsumerContext" />
+        <Route component={UsePrevious} exact path="/UsePrevious" />
+        <Route component={UseMemoEx} exact path="/UseMemoEx" />
+        <Route component={UseRefEx} exact path="/UseRefEx" />
+        <Route component={LifeCyclesHooks} exact path="/LifeCyclesHooks" />
         <Route component={ReactPdf} exact path="/ReactPdf" />
         <Route component={PdfPrint} exact path="/PdfPrint" />
         <Route component={HOCEx} exact path="/hocex" />

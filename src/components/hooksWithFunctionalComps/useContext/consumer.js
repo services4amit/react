@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import MyCompContxt from "./context";
 import LastComp from "./lastComponent"
 
@@ -11,6 +11,7 @@ const PrintContextName = () => {
         }}
       </MyCompContxt.Consumer>
       <LastComp />
+      Using useContext {useContext(MyCompContxt)}
     </div>
   );
 };
